@@ -1,0 +1,13 @@
+window_sizes 1920 1005 450 1464 823 128
+
+diagrams
+  active  usecasediagram_ref 141065 // pacmanUseCases
+    1171 658 100 A4 0 0
+end
+show_stereotypes
+selected usecasediagram_ref 141065 // pacmanUseCases
+open
+  usecaseview_ref 128009 // pacmanUseCases
+  activity_ref 134537 // dataflow
+end
+end

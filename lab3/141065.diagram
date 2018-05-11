@@ -1,0 +1,58 @@
+format 218
+
+classcanvas 128009 class_ref 128009 // Spelaren
+  simpleclassdiagramsettings end
+  xyz 54 239 2000
+end
+usecasecanvas 128137 usecase_ref 128009 // Starta spel
+  xyzwh 192 199 3005 64 32 label_xy 192 231
+end
+usecasecanvas 128521 usecase_ref 128137 // Spela Spel
+  xyzwh 404 279 3005 64 32 label_xy 404 311
+end
+usecasecanvas 128649 usecase_ref 128265 // Ladda Spel
+  xyzwh 365 73 3005 64 32 label_xy 365 105
+end
+usecasecanvas 128777 usecase_ref 128393 // Avsluta Spel
+  xyzwh 361 385 3005 64 32 label_xy 357 417
+end
+usecasecanvas 128905 usecase_ref 128521 // Visa HighScore
+  xyzwh 334 523 3005 64 32 label_xy 321 555
+end
+usecasecanvas 129417 usecase_ref 128649 // Spara Spel
+  xyzwh 538 75 3005 64 32 label_xy 538 107
+end
+classcanvas 129673 class_ref 128137 // HDD
+  simpleclassdiagramsettings end
+  xyz 664 262 2000
+end
+line 128265 ---> decenter_begin 430
+  from ref 128009 z 3006 to point 164 265
+  line 128393 z 3006 to ref 128137
+simplerelationcanvas 129033 simplerelation_ref 128009
+  from ref 128521 z 3006 stereotype "<<extend>>" xyz 293.5 252.5 3000 to ref 128137
+end
+simplerelationcanvas 129161 simplerelation_ref 128137
+  from ref 128649 z 3006 stereotype "<<extend>>" xyz 379 190.5 3000 to ref 128521
+end
+simplerelationcanvas 129289 simplerelation_ref 128265
+  from ref 128777 z 3006 stereotype "<<extend>>" xyz 376.5 347 3000 to ref 128521
+end
+simplerelationcanvas 129545 simplerelation_ref 128393
+  from ref 128521 z 3006 stereotype "<<include>>" xyz 446.5 185 3000 to point 524 91
+  line 130569 z 3006 to ref 129417
+end
+line 129801 ---> decenter_end 462
+  from ref 129417 z 3006 to point 642 93
+  line 130441 z 3006 to ref 129673
+line 130953 ---> decenter_end 215
+  from ref 128649 z 3006 to ref 129673
+simplerelationcanvas 131081 simplerelation_ref 128521
+  from ref 128905 z 3006 stereotype "<<extend>>" xyz 259 375.5 3000 to ref 128137
+end
+simplerelationcanvas 131209 simplerelation_ref 128649
+  from ref 128905 z 3006 stereotype "<<include>>" xyz 341 469 3000 to ref 128777
+end
+line 131337 ---> decenter_end 691
+  from ref 128905 z 3006 to ref 129673
+end
