@@ -1,6 +1,6 @@
 format 218
 "lab3"
-  revision 3
+  revision 4
   modified_by 9 "Marcus Kristoffersso"
 
 
@@ -222,7 +222,7 @@ ${members}}
        end
     end
 
-    class 128137 "HDD"
+    class 128137 "LocalDB"
       visibility package stereotype "actor"
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
