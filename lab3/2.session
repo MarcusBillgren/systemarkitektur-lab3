@@ -1,0 +1,10 @@
+window_sizes 1530 791 450 1075 641 104
+
+show_stereotypes
+selected 
+package_ref 129 // lab3
+open
+  usecaseview_ref 128009 // pacmanUseCases
+  activity_ref 134537 // dataflow
+end
+end
