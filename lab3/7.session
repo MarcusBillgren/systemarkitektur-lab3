@@ -1,13 +1,15 @@
 window_sizes 2400 1225 600 1795 1075 104
 
 diagrams
-  active  activitydiagram_ref 134537 // pacmanDFD
+  activitydiagram_ref 134537 // pacmanDFD
+    1436 860 100 A4 0 0
+  active  usecasediagram_ref 141065 // pacmanUseCases
     1436 860 100 A4 0 0
 end
 show_stereotypes
-selected activitydiagram_ref 134537 // pacmanDFD
+selected usecase_ref 128393 // Avsluta Spel
 open
-  usecaseview_ref 128009 // pacmanUseCases
+  usecase_ref 128393 // Avsluta Spel
   activity_ref 134537 // dataflow
 end
 end
